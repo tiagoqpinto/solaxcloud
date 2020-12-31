@@ -13,13 +13,13 @@ You need:
 - Place this directory in `/config/cusotm_components`. If `cusotm_components`
   does not exist, you have to create it.
 - Add the sensor to your configuration.yaml:
-  ```yaml
-  sensor:
+```yaml
+sensor:
   - platform: solaxcloud
     name: Inverter 1
     api_key: YOUR_API_KEY
     sn: YOUR_INVERTER_SN
-  ```
+```
 - Verify that the custom entities are available in home assistant (Total Yield,
   Daily Yield and AC Power).
 
