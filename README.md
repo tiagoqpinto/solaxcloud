@@ -30,5 +30,30 @@ same configuration again, but changing the inverter SN, you can add more
 inverters to home assistant.
 
 ```
+sensor:
+# ...
+  - platform: solaxcloud
+    name: Inverter 2
+    api_key: YOUR_API_KEY
+    sn: YOUR_INVERTER_2_SN
 
+  - platform: template
+    sensors:
+      total_yield:
+        friendly_name: 'Total Yield'
+        icon_template: 'mdi:solar-power'
+        unit_of_measurement: 'kWh'
+        value_template: "{{ states('sensor.inverter_1.total_yield')|float + states('sensor.inverter_2.total_yield')|float }}"
+
+      daily_yield:
+        friendly_name: 'Daily Yield'
+        icon_template: 'mdi:solar-power'
+        unit_of_measurement: 'kWh'
+        value_template: "{{ states('sensor.inverter_1.daily_yield')|float + states('sensor.inverter_2.daily_yield')|float }}"
+
+      ac_power:
+        friendly_name: 'AC Power'
+        icon_template: 'mdi:solar-power'
+        unit_of_measurement: 'kW'
+        value_template: "{{ states('sensor.inverter_1.ac_power')|float + states('sensor.inverter_2.ac_power')|float }}"
 ```
