@@ -1,8 +1,0 @@
-{
-    "domain": "solaxcloud",
-    "name": "Solax cloud integration",
-    "documentation": "https://www.solaxcloud.com",
-    "dependencies": [],
-    "codeowners": [],
-    "requirements": []
-  }
