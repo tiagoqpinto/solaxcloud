@@ -13,7 +13,7 @@ You need:
 - Place this directory in `/config/cusotm_components`. If `cusotm_components`
   does not exist, you have to create it.
 - Add the sensor to your configuration.yaml:
-  ```
+  ```yaml
   sensor:
   - platform: solaxcloud
     name: Inverter 1
