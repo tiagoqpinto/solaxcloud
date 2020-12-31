@@ -27,11 +27,12 @@ You need:
 
 You might have multiple inverters in your PV installation. By simply adding the
 same configuration again, but changing the inverter SN, you can add more
-inverters to home assistant.
+inverters to home assistant. Also, you might want a combined value of your
+inverters, this can be achieved with home assistants template platform
 
-```
+```yaml
 sensor:
-# ...
+  # ...
   - platform: solaxcloud
     name: Inverter 2
     api_key: YOUR_API_KEY
