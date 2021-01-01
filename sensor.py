@@ -137,7 +137,7 @@ class InverterACPowerSensor(Entity):
 
     @property
     def unit_of_measurement(self):
-        return 'kW'
+        return 'W'
 
     @property
     def icon(self):
