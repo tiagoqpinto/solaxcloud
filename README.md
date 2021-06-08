@@ -10,7 +10,7 @@ You need:
 
 ## Installation
 
-- Place this directory in `/config/cusotm_components`. If `cusotm_components`
+- Place this directory in `/config/custom_components`. If `custom_components`
   does not exist, you have to create it.
 - Add the sensor to your configuration.yaml:
 ```yaml
